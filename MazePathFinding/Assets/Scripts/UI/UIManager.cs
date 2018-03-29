@@ -52,6 +52,10 @@ public class UIManager : MonoBehaviour
     {
         OnButtonClick_Reset();
 
+        int w = int.Parse(inputWidth.text);
+        int h = int.Parse(inputHeight.text);
+        ScreenshotManager.Instance.AdjustCamera(w, h);
+
         if (toggleMaze[0].isOn)
         {
             tileSetManager.StarGenerateMaze(1);

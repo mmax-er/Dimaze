@@ -19,8 +19,8 @@ public class RTSMoveCamera : MonoBehaviour
         var d = Input.GetAxis("Mouse ScrollWheel");
         camPosY -= d * 8.0f;
 
-        if (Mathf.Abs(camPosY - transform.position.y) >= 0.1)
-            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, camPosY, transform.position.z), Time.deltaTime * 10f);
+        //if (Mathf.Abs(camPosY - transform.position.y) >= 0.1)
+        //    transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, camPosY, transform.position.z), Time.deltaTime * 10f);
 
         if(Input.GetKey(KeyCode.LeftShift) && Input.GetMouseButtonUp(0))
         {
@@ -93,6 +93,10 @@ public class RTSMoveCamera : MonoBehaviour
             {
                 var pos = hit.collider.gameObject.transform.position;
                 markerObj.transform.position = pos;
+            }
+            else
+            {
+                Debug.LogError("HERE");
             }
         }
     }
