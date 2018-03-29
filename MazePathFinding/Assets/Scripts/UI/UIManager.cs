@@ -76,16 +76,16 @@ public class UIManager : MonoBehaviour
     {
         if (togglePath[0].isOn)
         {
-            tileSetManager.StarFindingPath(1);
+            tileSetManager.StartFindingPath(1);
         }
         else if (togglePath[1].isOn)
         {
-            tileSetManager.StarFindingPath(2);
+            tileSetManager.StartFindingPath(2);
 
         }
         else if (togglePath[2].isOn)
         {
-            tileSetManager.StarFindingPath(3);
+            tileSetManager.StartFindingPath(3);
         }
     }
 
@@ -110,6 +110,6 @@ public class UIManager : MonoBehaviour
 
     public void OnButtonClick_Stop()
     {
-        tileSetManager.StopAnimation();
+        //tileSetManager.StopAnimation();
     }
 }
