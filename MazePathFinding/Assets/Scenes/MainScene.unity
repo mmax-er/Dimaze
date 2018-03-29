@@ -1866,6 +1866,10 @@ CanvasRenderer:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7f3056e9f6e808c4a9eba55a7ca5e25c, type: 3}
   m_PrefabInternal: {fileID: 1590575779}
+--- !u!4 &766509735 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 7f3056e9f6e808c4a9eba55a7ca5e25c, type: 3}
+  m_PrefabInternal: {fileID: 1590575779}
 --- !u!1 &776627045
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,6 +2089,10 @@ CanvasRenderer:
 --- !u!1 &1082503795 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7f3056e9f6e808c4a9eba55a7ca5e25c, type: 3}
+  m_PrefabInternal: {fileID: 1595750720}
+--- !u!4 &1082503798 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 7f3056e9f6e808c4a9eba55a7ca5e25c, type: 3}
   m_PrefabInternal: {fileID: 1595750720}
 --- !u!1 &1083210489
 GameObject:
@@ -3824,6 +3832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31bb5889fe5bce4dbd7cb94ed0955df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiManager: {fileID: 1395005391}
+  startPoint: {fileID: 1082503798}
+  endPoint: {fileID: 766509735}
+  sequence: []
 --- !u!1 &1690543154
 GameObject:
   m_ObjectHideFlags: 0
